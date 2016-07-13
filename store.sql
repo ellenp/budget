@@ -36,11 +36,11 @@ CREATE TABLE product(
   brand_no int REFERENCES brand,
   specification varchar,
   quantity numeric(10, 4),
-  unit varchar,
+  unit varchar/*,
   account_prefix_no int,
   account_no int,
   FOREIGN KEY (account_prefix_no, account_no)
-    REFERENCES account (prefix_no, no)
+    REFERENCES account (prefix_no, no)*/
 );
 
 CREATE TABLE transaction_item(
@@ -49,5 +49,6 @@ CREATE TABLE transaction_item(
   product_no int REFERENCES product,
   quantity numeric(10, 4),
   unit_price numeric(15, 2),
-  amount numeric(15, 2)
+  amount numeric(15, 2),
+  account_transaction_no REFERENCES account_transaction
 );
