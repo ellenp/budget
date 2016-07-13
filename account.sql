@@ -6,6 +6,7 @@ CREATE TABLE account(
 );
 
 CREATE TABLE account_transaction(
+  no int PRIMARY KEY,
   account_prefix_no int,
   account_no int,
   amount numeric(15, 2),
