@@ -1,4 +1,4 @@
-create table address(
+create table location(
   no int PRIMARY KEY,
   province varchar,
   town_city varchar,
@@ -9,7 +9,7 @@ create table address(
 CREATE TABLE store(
   no int PRIMARY KEY,
   name varchar,
-  address_no int REFERENCES address
+  location_no int REFERENCES location
 );
 
 create table store_transaction(
