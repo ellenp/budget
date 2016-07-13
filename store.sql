@@ -37,7 +37,10 @@ CREATE TABLE product(
   specification varchar,
   quantity numeric(10, 4),
   unit varchar,
-  account_no int REFERENCES account
+  account_prefix_no int,
+  account_no int,
+  FOREIGN KEY (account_prefix_no, account_no)
+    REFERENCES account (prefix_no, no)
 );
 
 CREATE TABLE transaction_item(
