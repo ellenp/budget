@@ -51,3 +51,6 @@ CREATE FUNCTION create_account_transaction(
     
   END;
 $$ LANGUAGE plpgsql;
+
+
+INSERT INTO account (prefix_no, no, account) VALUES ()
