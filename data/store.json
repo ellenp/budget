@@ -1,0 +1,25 @@
+[{
+	"name": "Gaisano Country Mall",
+	"location_no": 0
+}, {
+	"name": "Metro Gaisano",
+	"location_no": 0
+}, {
+	"name": "Metro Ayala",
+	"location_no": 0
+}, {
+	"name": "National Bookstore",
+	"branch": "Ayala",
+	"location_no": 0
+}, {
+	"name": "Watsons",
+	"branch": "Ayala",
+	"location_no": 0
+}, {
+	"name": "Fully Booked",
+	"branch": "Ayala",
+	"location_no": 0
+}, {
+	"name": "",
+	"location_no": 0
+}]
