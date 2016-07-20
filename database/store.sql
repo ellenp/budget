@@ -9,6 +9,7 @@ create table location(
 CREATE TABLE store(
   no int PRIMARY KEY,
   name varchar,
+  branch varchar,
   location_no int REFERENCES location
 );
 
